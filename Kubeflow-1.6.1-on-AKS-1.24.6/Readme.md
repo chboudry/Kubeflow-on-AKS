@@ -2,7 +2,7 @@
 
 ## Note 
 
-Folder manifest is a direct clone from https://github.com/kubeflow/manifests.git branch 1.61.\
+Folder manifest is a direct clone from https://github.com/kubeflow/manifests.git branch 1.6.1.\
 Fill free to reclone if you like.
 The only thing I edited is manifest/common/user-namespace/base/params.env : \
 Change line 2 from :
