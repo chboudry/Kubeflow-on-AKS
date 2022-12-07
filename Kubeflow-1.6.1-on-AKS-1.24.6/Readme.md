@@ -49,4 +49,9 @@ password : 12341234
 ## Customization
 - If you already have an AKS cluster, you can run make deploy-kubeflow instead of make all.
 
+## Improvments to Consider
+This is only a proof of concept focus on Kubeflow installation, you should consider :
+- Improving user authentication
+- Improving network : setup AKS within a private network and set up a private IP for Istio load balancer
+
 
