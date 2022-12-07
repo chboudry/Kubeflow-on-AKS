@@ -1,0 +1,1 @@
+az group create -n $RESOURCE_GROUP_NAME -l $LOCATION
