@@ -16,8 +16,8 @@ profile-name=kubeflow-admin-example-com
 
 
 ## Step by step 
-1. Open this folder within a dev container instance (VS code or Github codespace), This will allow you to have all the prerequisite installed : make, git, azcli, kubectl, kustomize.
-2. Copy .env.sample and create your own .env
+1. Clone this repo and open this folder within a dev container instance (VS code or Github codespace), This will allow you to have all the prerequisite installed : make, git, azcli, kubectl, kustomize.
+1. Copy .env.sample and create your own .env
 1. Run : 
 ```
 az login
@@ -28,12 +28,13 @@ az login
 az account set --subscription SUBSCRIPTIONID
 ```
 
-4. Run :
+5. Run :
 ```
 make all
 ```
+Notice : this will build RG + AKS + Kubeflow. If you don't want that you can run make deploy-kubeflow only for example.
 
-5. To expose Kubeflow, run either
+6. To expose Kubeflow, run either
 ```
 make port-forward
 ```
@@ -42,12 +43,9 @@ or
 make expose-loadbalancer
 ```
 
-6. Connect using :\
+7. Connect using :\
 username : user@example.com\
 password : 12341234
-
-## Customization
-- If you already have an AKS cluster, you can run make deploy-kubeflow instead of make all.
 
 ## Improvments to Consider
 This is only a proof of concept focus on Kubeflow installation, you should consider :
