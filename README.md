@@ -10,4 +10,5 @@ Packaged Kubeflow distribution is currently obsolete for AKS. \
  This means we need to install Kubeflow manually.
 
  ## How To
- You will find as part of this repo the combination I tried that worked. Select the one you like and build from there.
+ You will find as part of this repo the combination I tried that worked.\
+ Select the one you like and build from there.
